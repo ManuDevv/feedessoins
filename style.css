@@ -169,7 +169,8 @@ span{
   }
 
 .text-presentation img{
-    border-radius: 100%;
+    border-radius: 10%;
+    
     
 }
 .container-media{
@@ -194,6 +195,7 @@ table{
   align-items: center;
   background-color: #3b5998;
   height: 700px;
+  margin-left: 300px;
 }
 
 
