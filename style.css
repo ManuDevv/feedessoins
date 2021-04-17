@@ -24,9 +24,9 @@ background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, F
 
 nav {
     background: rgb(224, 238, 185); 
-   
+   margin-top: 0;
   position: absolute;
-  position: fixed;
+  
    z-index: 100; 
   width: 100%;
   height: 100px;
@@ -37,6 +37,7 @@ nav {
   transform: translateY(-30px);
   animation: apparition 0.4s 1.6s ease-out forwards;
 }
+
 
 nav a {
   text-decoration: none;
@@ -64,8 +65,7 @@ nav a {
   flex-shrink: 0;
   padding: 20px 20px 130px 20px;
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
   flex-direction: column;
   position: relative;
   
@@ -73,10 +73,7 @@ nav a {
 .fee {
   
   width: 300px;
-  height: 400px;
- 
- 
-  
+  height: 400px;  
   opacity: 0;
   transform: translateX(30px);
   animation: apparition 0.8s 1s ease-out forwards;
@@ -196,6 +193,32 @@ table{
   background-color: #3b5998;
   height: 700px;
   margin-left: 300px;
+}
+/* page des tarifs */
+
+.container-title{
+  
+  margin-top: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: 'Great Vibes';
+
+}
+.table-tarif{
+  width: 100%;
+  font-size: 30px;
+  font-family:'Great Vives',cursive;
+  display: flex;
+  justify-content: center;
+  
+}
+.entete{
+  font-size: 50px;
+  font-family:'Great Vives',cursive;
+  text-decoration:underline;
+
 }
 
 
