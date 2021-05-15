@@ -8,7 +8,7 @@
 
  
  
-min-height: 100vmin;
+min-height: 100%;
  display: table;
  justify-content: center;
  align-items: center;
@@ -21,20 +21,6 @@ background-image: url(img/gradient.jpeg)
   
  }
 /*page index********/
- .home{
-  width: 100%;
-  height: auto;
-   display: flex;
-    
-    justify-content: space-between;
-    align-items: center;
-    
-   
-}
-.fee{
- 
-}
-
 nav{
   width: auto;
   height: 450px;
@@ -49,6 +35,21 @@ nav{
 nav a {
   font-size: 70px;
 }
+ .home{
+  width: 100%;
+  height: auto;
+   display: flex;
+    margin-top: 200px;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+.fee{
+  margin-top: 30px;
+ 
+}
+
 
 .bloc{
    display: flex;
@@ -61,18 +62,14 @@ nav a {
   
 }
 .bloc h1{
-  font-size: 100px;
+  font-size: 200px;
   
 }
 .container-lune{
-  width: 100vh;
-  height: auto;
+  width: 100%;
+  
   margin-left: -150px;
-  margin-top: -150px;
-  display: flex;
-  
-  align-items: flex-start;
-  
+  margin-top: 350px;
   
 }
 /* page presentation**********/
@@ -81,7 +78,5 @@ nav a {
   
 }
 .text-consultation{
- 
-
   width: 700px;
 }
