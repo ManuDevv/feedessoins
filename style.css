@@ -1,33 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
-*,
+/* *,
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
-   /* background: rgb(224, 238, 185); */
-   background: #DAD299;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #B0DAB9, #DAD299);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #B0DAB9, #DAD299); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  width: 100%;
+  height: 100%;
+  /* background: rgb(224, 238, 185); */
+  background: #dad299; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b0dab9,
+    #dad299
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b0dab9,
+    #dad299
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+
 nav {
-    background: rgb(224, 238, 185); 
-   margin-top: 0;
+  background: rgb(224, 238, 185);
+  margin-top: 0;
   position: relative;
-  
-   z-index: 100; 
+
+  z-index: 100;
   width: 100%;
   height: 100px;
   display: flex;
@@ -37,7 +47,6 @@ nav {
   transform: translateY(-30px);
   animation: apparition 0.4s 1.6s ease-out forwards;
 }
-
 
 nav a {
   text-decoration: none;
@@ -54,8 +63,6 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
- 
- 
 }
 
 .bloc {
@@ -65,32 +72,28 @@ nav a {
   flex-shrink: 0;
   padding: 20px 20px 130px 20px;
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   flex-direction: column;
   position: relative;
-  
 }
 .fee {
-  
   width: 300px;
-  height: 400px;  
+  height: 400px;
   opacity: 0;
   transform: translateX(30px);
-  animation: apparition 0.8s 1s ease-out forwards;
+  animation: apparition 0.8s 3s ease-out forwards;
   z-index: 2;
 }
 .bloc h1 {
-    height: 500px;
+  height: 500px;
   font-size: 120px;
   font-family: Playfair Display, arial;
   font-weight: 200;
   line-height: 1.5;
   margin-bottom: 20px;
-  
-  
 }
-span{
-  font-family: 'Berkshire Swash', cursive;
+span {
+  font-family: "Berkshire Swash", cursive;
 }
 
 .bloc h1 span {
@@ -99,13 +102,13 @@ span{
   display: flex;
   transform: translateY(-30px);
 }
-.bloc h1 > span:nth-child(1){
+.bloc h1 > span:nth-child(1) {
   animation: apparition 0.8s 0.2s ease-out forwards;
 }
-.bloc h1 > span:nth-child(2){
+.bloc h1 > span:nth-child(2) {
   animation: apparition 0.8s 0.4s ease-out forwards;
 }
-.bloc h1 > span:nth-child(3){
+.bloc h1 > span:nth-child(3) {
   animation: apparition 0.8s 0.6s ease-out forwards;
 }
 
@@ -117,14 +120,13 @@ span{
   transform: translateY(-30px);
   animation: apparition 0.8s 0.7s ease-out forwards;
 }
-.nav-anim{
-    background-color:#333;
-    color: antiquewhite;
-    transition: all 0.3s ease-in-out;
-    
+.nav-anim {
+  background-color: #333;
+  color: antiquewhite;
+  transition: all 0.3s ease-in-out;
 }
 
-.container-lune{ 
+.container-lune {
   width: 800px;
   height: 800px;
   display: flex;
@@ -133,60 +135,52 @@ span{
   margin-left: -400px;
 }
 
-.lune{
+.lune {
   position: absolute;
   z-index: 1;
- 
+
   opacity: 0;
   transform: scale(0.5);
   animation: apparition 2s 0.7s ease-out forwards;
 }
 
-
 /* page présentation*/
 
-
-.presentation{  
-    
-    height: 70vh;
-    display: flex; 
-     
-    
+.presentation {
+  height: 70vh;
+  display: flex;
 }
-.text-presentation{
-    width: 100%;
-    font-family: 'Great Vibes', cursive;
-    padding: 20px;
-    font-size: 50px;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;   
-
-  }
-
-.text-presentation img{
-    border-radius: 10%;
-    
-    
-}
-
-.container-media{
+.text-presentation {
   width: 100%;
-    font-family: 'Great Vibes', cursive;
-    padding: 20px;
-    font-size: 50px;
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;  
+  font-family: "Great Vibes", cursive;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
-table{
+.text-presentation img {
+  border-radius: 10%;
+}
+
+.container-media {
+  width: 100%;
+  font-family: "Great Vibes", cursive;
+  padding: 20px;
+  font-size: 50px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+table {
   border-spacing: 50px 1rem;
 }
 
-.facebook{
+.facebook {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,34 +191,29 @@ table{
 }
 /* page des tarifs */
 
-.container-title{
-  
+.container-title {
   margin-top: 50px;
   width: 100%;
   display: flex;
   justify-content: center;
   font-size: 70px;
-  font-family: 'Great Vibes';
-
+  font-family: "Great Vibes";
 }
-.table-tarif{
+.table-tarif {
   width: 100%;
   font-size: 30px;
-  font-family:'Great Vives',cursive;
+  font-family: "Great Vives", cursive;
   display: flex;
   justify-content: center;
-  
 }
-.entete{
+.entete {
   font-size: 50px;
-  font-family:'Great Vives',cursive;
-  text-decoration:underline;
-
+  font-family: "Great Vives", cursive;
+  text-decoration: underline;
 }
-
 
 @keyframes apparition {
-  100%{
+  100% {
     opacity: 1;
     transform: none;
   }
@@ -234,8 +223,6 @@ table{
   animation-play-state: paused !important;
 }
 
-
-.fade-in{
-    opacity: 1;
+.fade-in {
+  opacity: 1;
 }
-  
