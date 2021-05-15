@@ -1,25 +1,34 @@
-
-
- body {
- margin: 0;
+*{
+  margin: 0;
  padding: 0;
- width: 100%;
- height: 955px;
- display: table; 
- background-size: cover; 
-  background-repeat: no-repeat;
-  background: linear-gradient(#b0dab9,#dad299) ;
+ box-sizing: border-box;
+}
+
+  body {
+
+ 
+ 
+min-height: 100vmin;
+ display: table;
+ justify-content: center;
+ align-items: center;
+background-image: url(img/gradient.jpeg)
+ 
+
+ 
+
    
   
  }
 /*page index********/
-.home{
+ .home{
   width: 100%;
   height: auto;
    display: flex;
     
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    
    
 }
 .fee{
@@ -27,30 +36,42 @@
 }
 
 nav{
-  width: 250px;
-  height: 200px;
+  width: auto;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 20px;
-  line-height: 40px;
+  line-height: 90px;
+ 
 }
+nav a {
+  font-size: 70px;
+}
+
 .bloc{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: -50px;
+   display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px;
+  
+  
  
   
 }
 .bloc h1{
+  font-size: 100px;
   
 }
 .container-lune{
   width: 100vh;
-  margin-left: 0;
+  height: auto;
+  margin-left: -150px;
+  margin-top: -150px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  align-items: flex-start;
+  
+  
 }
