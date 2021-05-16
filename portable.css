@@ -39,7 +39,7 @@ nav a {
   width: 100%;
   height: auto;
    display: flex;
-    margin-top: 200px;
+    
     justify-content: space-between;
     align-items: center;
     
@@ -55,11 +55,7 @@ nav a {
    display: flex;
   justify-content: center;
   align-items: center; 
-  margin-top: 20px;
-  
-  
- 
-  
+    
 }
 .bloc h1{
   font-size: 200px;
