@@ -69,11 +69,35 @@ nav a {
   
 }
 /* page presentation**********/
+.main-presentation{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-presentation{
+
+  margin-top: 250px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+.text-presentation img{
+  margin: 70px;
+  float: right;
+  shape-outside: circle();
+}
 .container-media{
   width: 1200px;
+  margin-top: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   
 }
 .text-consultation{
-  width: 700px;
+  width: 1000px;
+ 
+ 
 }
