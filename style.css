@@ -139,22 +139,30 @@ span {
 
   opacity: 0;
   transform: scale(0.5);
-  animation: apparition 2s 0.7s ease-out forwards;
+  animation: 
+  
+  2s 0.7s ease-out forwards;
 }
 
 /*********** page présentation************/
 
+.main-presentation{
+
+ 
+
+}
 .presentation {
   height: 70vh;
   display: flex;
 }
 .text-presentation {
   
-  font-family: "Great Vibes", cursive;
+  font-family: 'Dancing Script', cursive;
   padding: 20px;
   font-size: 50px;
   margin-top: 70px;
   display: flex;
+  font-weight: 200;
 
   
 }
@@ -163,6 +171,7 @@ span {
   border-radius: 10%;
    float: right;
   shape-outside: circle();
+  margin:50px;
   
 }
 
@@ -217,39 +226,63 @@ table {
 
 /**********page contact**********/
 
-.main-container-contact{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-.container-tel{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.main-page-contact{
+  width: 100%;
+  height: 100vh;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   
+ 
+}
+.contact{
+  height: 100% ;
+ 
+;
+}
+.contact img{
+ 
+  z-index: 0;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0;
+}
+.main-form{
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+
 }
 form{
-  padding: 20px;
-  height: 500px;
+  font-size: 30px;
   width: 1000px;
-  line-height: 3.5rem;
-  display: flex;
-  flex-direction: column;
-  background-color: #f1f1f1 .5;
-  border-radius: 15px;
-  color: #333;
-  box-shadow: #333 0 0 25px;
+  
+  
 }
 input{
-  width: 250px;
-  height: 30px;
-  border:#333 solid 1px;
-  border-radius: 15px;
+  height: 50px;
+  width: 200px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: #333 10px 10px;
+}
+.test{
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right,#b0dab9,
+  #dad299);
+
 }
 .submit{
-  margin-top: 30px;
-  background-color: #dad299;
+  background-image: linear-gradient(to right,#b0dab9,#dad299);
+  color: #f1f1f1;
+  font-weight: 900;
+  font-size: 25px;
 }
+
+/***************/
 
 @keyframes apparition {
   100% {
