@@ -25,24 +25,100 @@
 
   <div class="main-page-contact">
     <div class="contact">
-      <img src="img/01.jpg" alt="">
+      
 
-      <div class="main-form">
+      <!-- <div class="main-form">
 
         <form action="" class="form">
           <h1 class="test">Formulaire de contact</h1>
           <label for="">Nom/prénom</label></br>
-          <input type="text" placeholder="Votre nom"></br>
+          <input type="text" placeholder="Votre nom" required></br>
           <label for="mail">Adresse mail</label></br>
-          <input type="mail" placeholder="Indiquer votre mail"></br>
+          <input type="mail" placeholder="Indiquer votre mail" required></br>
           <label for="">Message</label></br>
-          <input type="text" placeholder="Poster votre message ici "></br>
+          <input type="text" placeholder="Poster votre message ici "required ></br>
           <input type="submit" class="submit">
         </form>
+      </div> -->
+
+      <div class="box">
+
+        <form action="" class="formBloc">
+
+          <h3><strong>Formulaire de contact<strong></h3>
+
+            <div class="formGroupe">
+              <label for="nom">Nom</label>
+              <input type="text"required id="nom">
+            </div>
+
+            <div class="formGroupe">
+              <label for="mail">Email</label>
+              <input type="text"required id="mail">
+            </div>
+
+            <div class="formGroupe">
+              <label for="message">Message</label>
+              <input type="text"required id="message">
+            </div>
+
+            <div class="formGroupe">
+              <input type="submit" value="Envoyer" class="btn">
+            </div>
+           
+            
+
+        </form>
+
       </div>
+     
+
+    
     </div>
   </div>
+  <script>
 
+// const inputs=document.querySelectorAll('input');
+
+
+// console.log(inputs)
+
+// for(let i = 0; i < inputs.length; i++){
+
+//   let field =inputs[i];
+    
+//   field.addEventListener('in',(e)=>{
+//         if(e.target.value != ""){
+//             e.target.parentNode.classList.add('animation');
+
+//         }else if(e.target.value ==""){
+//             e.target.parentNode.classList.remove('animation');
+
+//         }
+//     })
+
+// }
+
+const inputs = document.querySelectorAll('input');
+
+        for (let i = 0; i < inputs.length; i++) {
+
+            let field = inputs[i];
+
+            field.addEventListener('input', (e) => {
+
+                if(e.target.value != ""){
+                    e.target.parentNode.classList.remove('animation');
+                } else  ()=> {
+                   
+                }
+
+            })
+
+        }
+
+
+  </script>
 </body>
 
 </html>

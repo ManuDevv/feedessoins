@@ -223,64 +223,99 @@ table {
 }
 
 /**********page contact**********/
-
-.main-page-contact{
-  width: 100%;
-  height: 100vh;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  
- 
-}
 .contact{
-  height: 100% ;
- 
-;
-}
-.contact img{
- 
-  z-index: 0;
-  border-radius: 20px;
-  position: relative;
-  margin-top: 0px;
-  margin-left: 0;
-}
-.main-form{
-  
+  background-color: #333;
   display: flex;
   justify-content: center;
-
+  align-items: center;
+  height: 70vh;;
 }
-form{
-  font-size: 30px;
-  width: 1000px;
-  background-color: #f1f1f1;
+.box{
+  width: 500px;
+  height: auto;
+  padding: 25px;
+  background: #f1f1f1;
   border-radius: 20px;
-  
-  
 }
-input{
-  height: 50px;
-  width: 200px;
-  margin-bottom: 50px;
-  border-radius: 10px;
-  box-shadow: #333 10px 10px;
-}
-.test{
+.box h3 strong{
+
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right,#b0dab9,
-  #dad299);
+  background-image: linear-gradient(to right,#b0dab9,#dad299);
+  font-weight: 900;
+  font-size: 35px;
+  
+}
+.box h3{
+  margin-bottom: 45px;
+}
+
+.formBloc .formGroupe{
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.formBloc .formGroupe label{
+  position:absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.formBloc .formGroupe input{
+  display: bloc;
+  width: 100%;
+  padding: 10px 0px;
+  border:none;
+  outline: none;
+  background:none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  transition: 0.4s ease-out;
+}
+.formGroupe:nth-child(4){
+  margin-bottom: 65px;
+  justify-content: center;
+}
+.formBloc .formGroupe .btn{
+  display: block;
+  width: auto;
+  padding: 15px 60px;
+  border:3px solid #b0dab9;
+  border-radius:999px ;
+  background-image: linear-gradient(to right,transparent 50%,#b0dab9 50%,#dad299);
+  background-size: 200%;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+
 
 }
-.submit{
-  background-image: linear-gradient(to right,#b0dab9,#dad299);
+.formBloc .formGroupe .btn:hover{
   color: #f1f1f1;
-  font-weight: 900;
-  font-size: 25px;
+  background-position: 100%;
+
 }
+
+.formBloc .formGroupe:focus-within label,
+.formBloc.formGroupe.animation label{
+  top: 0px;
+  transform: translateY(-100%) ;
+  color: #b0dab9;
+
+}
+
+.formBloc.formGroupe:focus-within input,
+.formBloc.formGroupe.animation input{
+ border-bottom-color: #b0dab9;
+
+}
+
 
 /***************/
 
@@ -298,3 +333,4 @@ input{
 .fade-in {
   opacity: 1;
 }
+

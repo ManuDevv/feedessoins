@@ -9,14 +9,15 @@
 // }
 
 // })
+
 var controller = new ScrollMagic.Controller();
 
 var scene = new ScrollMagic.Scene({
-
+    
     triggerElement: '.img-manue',reverse:false
     
-
-
+    
+    
 })
 .setClassToggle('.img-manue', 'fade-in')
 
