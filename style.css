@@ -259,9 +259,9 @@ table {
 
 .formBloc .formGroupe label{
   position:absolute;
-  top: 50%;
+  top: -50%;
   left: 0%;
-  transform: translateY(-50%);
+ 
   color: #aaa;
   font-size: 20px;
   transition: 0.4s ease-out;
