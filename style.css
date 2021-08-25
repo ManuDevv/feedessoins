@@ -302,19 +302,6 @@ table {
 
 }
 
-.formBloc .formGroupe:focus-within label,
-.formBloc.formGroupe.animation label{
-  top: 0px;
-  transform: translateY(-100%) ;
-  color: #b0dab9;
-
-}
-
-.formBloc.formGroupe:focus-within input,
-.formBloc.formGroupe.animation input{
- border-bottom-color: #b0dab9;
-
-}
 
 
 /***************/
